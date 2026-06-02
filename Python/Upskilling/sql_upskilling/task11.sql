@@ -1,0 +1,2 @@
+-- Find the number of users who registered each day in the last 7 days.
+-- i am not sure about this so ill do it later
