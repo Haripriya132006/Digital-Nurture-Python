@@ -1,0 +1,40 @@
+r-read //default
+a-appen
+w-write
+c-create
+
+t-text file    optional
+b-binary file
+
+open("filename") then store it in a variable 
+ex: f=open("file.txt") 
+print(f.read()) reading is once
+f.read(4)
+f.readline() reads the whole line
+
+can use foreach loop in file to read whole content
+by just printing line
+
+f.close() closing is important
+
+-------------------APPENDING----------
+f=open("filename","a")
+then f.write("words") to append 
+//this will add those contents
+
+------------------ WRITE/OVERWRITE----------
+f=open("filename","w")
+then f.write("content") 
+//this delets everything in the file and adds the new content
+
+-----------CREATE NEW FILE -------------
+//opens file for writing and creates it if doenst exist
+f=open("newfilename","w")
+
+//creates file only if it didnt exist
+//else throws error
+
+import os 
+if not os.path.exists("newfile.txt"):
+then f=open("newfile.txt","x")
+f.close()
